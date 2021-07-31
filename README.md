@@ -24,7 +24,12 @@ Nesse Labs você deve desenvolver e entregar um projeto de “Cadastro de usuár
 - Insomnia
 
 - MailTrap:
+    - Caixa de e-mail falsa para testes em desenvolvimento.
     - Site: mailtrap.io
+
+- Sentry:
+    - Monitoração de falhas em produção.
+    - Site: sentry.io
 
 ---        
 
@@ -42,6 +47,12 @@ Nesse Labs você deve desenvolver e entregar um projeto de “Cadastro de usuár
 
         Password-Generator
         $ yarn add password-generator
+
+        Bull
+        $ yarn add bull
+
+        Bull Board
+        $ yarn add bull-board
 
     - Dependendias de Desenvolvimento: Nodemon Sucrase
         $ yarn add nodemon sucrase -D
@@ -64,10 +75,19 @@ Nesse Labs você deve desenvolver e entregar um projeto de “Cadastro de usuár
 
         - app/lib/Mail.js
 
-        - app/config/mail.js 
+        - app/config/mail.js
+
+        - app/config/redis.js
+
+        - app/jobs/RegistrationMail.js 
+        
+        - app/jobs/index.js 
 
     - Editados:
 
         - package.json
             - "scripts"  
 ---
+
+
+# PARTE 7
